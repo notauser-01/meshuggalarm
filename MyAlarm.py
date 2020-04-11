@@ -25,8 +25,9 @@ while runclock == False:
 
 while now != alarm_time:
 	print(f"It is currently {now}, so you can sleep for longer.")
-	time.sleep(45)
-	now = str(datetime.datetime.now())[11:16]
+	for i in range(240):
+		time.sleep(.25)
+		now = str(datetime.datetime.now())[11:16]
 
 file = "03 Bleed.flac"
 os.startfile(file)
