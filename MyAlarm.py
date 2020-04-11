@@ -18,8 +18,8 @@ while runclock == False:
 				runclock = True
 	else:
 		alarm_time = input("Do it right! (HH:MM) ")
-			while len(alarm_time) <= 4:
-				alarm_time = input("Do it right! (HH:MM) ")
+		while len(alarm_time) <= 4:
+			alarm_time = input("Do it right! (HH:MM) ")
 		alarm_nums = alarm_time[0:2] + alarm_time[3:]
 		colon = alarm_time[2]
 
